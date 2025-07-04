@@ -1,0 +1,30 @@
+
+datadog:
+  site: datadoghq.eu  # EU Datadog site
+  clusterName: minikube
+  apiKeyExistingSecret: datadog-secret
+
+  # Kubelet configuration
+  kubelet:
+    tlsVerify: false  # Disable TLS verification, without this option agent may be failed
+
+  # Log collection
+  logs:
+    enabled: true
+    containerCollectAll: true
+
+  # Process monitoring
+  processAgent:
+    enabled: true
+
+  # Kube-state-metrics
+  kubeStateMetricsEnabled: true
+  kubeStateMetricsCore:
+    enabled: true
+
+ 
+
+clusterAgent:
+  enabled: true
+  replicas: 2  # HA:)
+  createPodDisruptionBudget: true  # PDB for cluster agent
