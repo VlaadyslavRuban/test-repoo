@@ -1,0 +1,8 @@
+profile       = "demo-ansible-packer"
+ami_name      = "demo-aws-ubuntu-packer2xy"
+instance_type = "t2.micro"
+region        = "us-west-2"
+source_ami    = "ami-0ec1bf4a8f92e7bd1"
+ssh_username  = "ubuntu"
+pkr_bucket_name = "ubuntu22-packer"
+owner      = "demo-user"
