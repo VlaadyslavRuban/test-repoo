@@ -1,5 +1,5 @@
 # test-repoo
-docs: https://fluxcd.io/flux/get-started/
+terraform init 
+terraform plan
 
-
-Repo for testing fluxcd with minikube
+EKS cluster
